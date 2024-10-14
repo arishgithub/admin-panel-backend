@@ -1,5 +1,4 @@
 import express from 'express';
-import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDB from './config/db.js';
@@ -7,7 +6,6 @@ import authRoutes from './routes/auth.js';
 import adminRoutes from './routes/admin.js';
 
 dotenv.config();
-mongoose.set("strictQuery", false);
 const app = express();
 
 // Middleware
